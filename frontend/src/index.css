@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&family=Poppins:wght@300;500;600;800&display=swap");
+
+/* layout */
+:root {
+  --primary: #FFFBDB;
+  --error: #FF6B6B;
+}
+
+/* old body background: #8AA39B; */
+body{
+  background: #CDC7E5;
+  margin: 0;
+  font-family: 'Ibarra Real Nova', serif;
+}
+
+header {
+  background: #A438BC;
+}
+
+header .container {
+  max-width: 14000px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a{
+  color: #CDC7E5;
+  text-decoration: none;
+}
+
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* home */
+
+.home{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+
+.workout-details{
+  background: #A438BC;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+.workout-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+
+.workout-details p{
+  margin: 0;
+  font-size: 0.9em;
+  color: #CDC7E5
+}
+
+.workout-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #8AA39B;
+  padding: 6px;
+  border-radius: 50%;
+  color:#F2CBF6;
+}
