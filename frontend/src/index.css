@@ -27,7 +27,7 @@ header .container {
 }
 
 header a{
-  color: #CDC7E5;
+  color: var(--primary);
   text-decoration: none;
 }
 
@@ -71,8 +71,49 @@ header a{
   top: 20px;
   right: 20px;
   cursor: pointer;
-  background: #8AA39B;
+  background: var(--primary);
   padding: 6px;
   border-radius: 50%;
-  color:#F2CBF6;
+  color:#A438BC;
+}
+
+/* new workout form */
+
+label, input, h3 {
+  display: block;
+  color: #A438BC;
+}
+
+
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #FFFBDB;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button{
+  background: var(--primary);
+  border: 0;
+  color: #A438BC;
+  padding: 10px;
+  font-family: 'Ibarra Real Nova', serif;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+div.error{
+  padding: 10px;
+  background: #FFF;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+input.error {
+  border: 1px solid var(--error);
 }
